@@ -26,11 +26,28 @@ export default function Content() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    setSubmitMessage('Thank you for subscribing!')
-    setEmail('')
-    setIsSubmitting(false)
+    
+    try {
+      const response = await fetch('https://backend-email-service-three.vercel.app/api/send-pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+  
+      if (response.ok) {
+        setSubmitMessage(t('site.pdfSentSuccess'))
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setSubmitMessage(t('site.pdfSentError'))
+    } finally {
+      setEmail('')
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -72,7 +89,7 @@ export default function Content() {
             disabled={isSubmitting}
             className="px-4 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
           >
-            {isSubmitting ? 'Submitting...' : 'Subscribe'}
+            {isSubmitting ? 'Submitting...' : 'Send'}
           </button>
         </div>
         {submitMessage && (

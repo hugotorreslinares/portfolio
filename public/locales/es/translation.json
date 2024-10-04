@@ -3,7 +3,8 @@
       "name": "Hugo Andres",
       "welcome": "Bienvenido a mi sitio web",
       "clickToChange": "Haz clic en la imagen para cambiarla",
-      "subscribe": "Suscríbete a nuestro boletín"
+      "subscribe": "Recibe mi hoja de vida en tu E-mail",
+      "pdfSentSuccess": "Revisa tu correo"
     },
     "nav": {
       "home": "Inicio",

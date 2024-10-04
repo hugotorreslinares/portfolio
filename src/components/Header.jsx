@@ -27,7 +27,7 @@ export default function Header() {
             alt="Logo"
             className="w-10 h-10 rounded-full mr-2"
           />
-          <span className="text-2xl font-bold text-blue-600">
+          <span className="text-2xl font-bold text-slate-100">
             {t("site.name")}
           </span>
         </a>
@@ -43,11 +43,11 @@ export default function Header() {
             menuOpen ? "block" : "hidden"
           } md:flex absolute md:relative top-full left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none`}
         >
-          {["home", "about", "services", "contact"].map((item) => (
+          {["contact"].map((item) => (
             <li key={item}>
               <a
                 href={`/${item.toLowerCase()}`}
-                className="block px-4 py-2 text-gray-800 hover:text-blue-600 transition-colors"
+                className="block px-4 py-2 text-slate-100 hover:text-slate-300 transition-colors"
               >
                 {t(`nav.${item}`)}
               </a>
