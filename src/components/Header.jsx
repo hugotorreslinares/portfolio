@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+
+import { Analytics } from "@vercel/analytics/react"
 import md5 from "md5";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
@@ -17,6 +19,7 @@ export default function Header() {
   };
   return (
     <header className="absolute top-0 left-0 right-0 z-10">
+      <Analytics />
       <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
         <a href="/" className="flex items-center">
           <img
