@@ -1,0 +1,14 @@
+{
+    "site": {
+      "name": "Hugo Andres",
+      "welcome": "Welcome to My Website",
+      "clickToChange": "Click the image to change it",
+      "subscribe": "Subscribe to Our Newsletter"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    }
+  }

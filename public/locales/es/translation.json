@@ -1,0 +1,14 @@
+{
+    "site": {
+      "name": "Hugo Andres",
+      "welcome": "Bienvenido a mi sitio web",
+      "clickToChange": "Haz clic en la imagen para cambiarla",
+      "subscribe": "Suscríbete a nuestro boletín"
+    },
+    "nav": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "services": "Servicios",
+      "contact": "Contacto"
+    }
+  }
