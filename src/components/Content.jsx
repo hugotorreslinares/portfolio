@@ -63,7 +63,7 @@ export default function Content() {
         <img
           src={imageUrls.images[currentImageIndex]}
           alt="Featured Image"
-          className={`w-full h-full object-cover transition-transform duration-300 ${
+          className={`w-full h-full object-contain transition-transform duration-300 ${
             imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
           }`}
         />
