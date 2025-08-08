@@ -9,6 +9,7 @@ import i18n from "../i18n";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const menuLinks = []; //["home", "about", "services", "contact"];
 
   const gravatarEmail = "hugotorreslinares@gmail.com";
   const gravatarUrl = `https://www.gravatar.com/avatar/${md5(
@@ -43,7 +44,7 @@ export default function Header() {
             menuOpen ? "block" : "hidden"
           } md:flex absolute md:relative top-full left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none`}
         >
-          {["contact"].map((item) => (
+          {menuLinks.map((item) => (
             <li key={item}>
               <a
                 href={`/${item.toLowerCase()}`}
@@ -55,7 +56,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="fixed right-4 top-1/4 transform -translate-y-1/2 flex flex-col space-y-4">
+      <div className="fixed right-4 top-1/4 transform -translate-y-1/2 flex flex-col space-y-4 dark:text-slate-100">
         <button onClick={() => changeLanguage("es")}>Es</button>
         <button onClick={() => changeLanguage("en")}>En</button>
       </div>

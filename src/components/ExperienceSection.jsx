@@ -7,9 +7,9 @@ export default function ExperienceSection() {
   return (
     <section className="bg-white dark:bg-zinc-900 py-16 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-zinc-800 dark:text-zinc-100">
+        <h3 className="text-2xl font-bold mb-12 text-zinc-800 dark:text-zinc-100">
           {t("experience.title")}
-        </h2>
+        </h3>
 
         <div className="space-y-10">
           {experienceData.map((item) => (
