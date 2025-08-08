@@ -19,9 +19,9 @@ export default function Header() {
     i18n.changeLanguage(lng);
   };
   return (
-    <header className="absolute top-0 left-0 right-0 z-10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-zinc-700">
       <Analytics />
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="/" className="flex items-center">
           <img
             src={gravatarUrl}
@@ -42,13 +42,13 @@ export default function Header() {
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
-          } md:flex absolute md:relative top-full left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none`}
+          } md:flex absolute md:relative top-full left-0 right-0 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm md:bg-transparent shadow-md md:shadow-none border-b border-gray-200 dark:border-zinc-700 md:border-none`}
         >
-          {menuLinks.map((item) => (
-            <li key={item}>
+          {menuLinks.map((item, index) => (
+            <li key={`${item.text}-${index}`}>
               <a
                 href={`/${item.route.toLowerCase()}`}
-                className="block px-4 py-2 text-slate-100 hover:text-slate-300 transition-colors"
+                className="block px-4 py-2 text-slate-700 dark:text-slate-100 hover:text-slate-300 transition-colors"
               >
                 {t(`nav.${item.text}`)}
               </a>

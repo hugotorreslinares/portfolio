@@ -14,7 +14,7 @@ const LayoutLoading = () => (
 
 export default function Layout({ children }) {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen pt-20">
       <Suspense fallback={<LayoutLoading />}>
         <Header />
       </Suspense>
