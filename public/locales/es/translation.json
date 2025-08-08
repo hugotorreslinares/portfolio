@@ -1,6 +1,6 @@
 {
     "site": {
-      "name": "Hugo Andres",
+      "name": "Hugo Torres",
       "welcome": "Bienvenido a mi sitio web",
       "clickToChange": "Haz clic en la imagen para cambiarla",
       "subscribe": "Recibe mi hoja de vida en tu E-mail",
@@ -15,7 +15,7 @@
       "experience": {
     "title": "Experiencia Profesional",
     "role1": "Lead Frontend Developer",
-    "period1": "Feb 2021 - Presente",
+    "period1": "Feb 2021 - Ene 2025",
     "description1": "Lidero el desarrollo frontend de soluciones escalables usando Vue.js, Angular y React. Implemento microfrontends, reviso código, creo nuevas funcionalidades y tests. Trabajo con PrimeNG, Figma, HTML5 y CSS3.",
     "period2": "Abr 2018 - Feb 2021",
     "description2": "Implementación de interfaces modernas con Angular, JavaScript y PHP. Desarrollo de microfrontends, creación de pruebas unitarias y funcionales. Fuerte enfoque en calidad de código y usabilidad.",

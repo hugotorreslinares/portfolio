@@ -1,0 +1,42 @@
+export const experienceData = [
+  {
+    key: "zemoga",
+    role: "experience.role1",
+    company: "Zemoga",
+    period: "experience.period1",
+    description: "experience.description1",
+    tech: ["Vue.js", "Angular", "React", "Microfrontends", "PrimeNG", "Figma", "HTML5", "CSS3", "Unit Testing", "Jest", "Storybook", "Git", "Jira", "Confluence", "CI/CD", "Agile", "Scrum"],
+  },
+  {
+    key: "globant",
+    role: "Web UI Semi Sr - ADV",
+    company: "Globant",
+    period: "experience.period2",
+    description: "experience.description2",
+    tech: ["Angular", "JavaScript", "PHP", "HTML5", "CSS3", "Figma", "Unit Testing", "Git", "Jira", "Confluence", "CI/CD", "Agile", "Scrum"],
+  },
+  {
+    key: "quadi",
+    role: "experience.role3",
+    company: "Quadi SAS",
+    period: "experience.period3",
+    description: "experience.description3",
+    tech: ["Angular", "HTML5", "CSS3", "PrimeNG", "Figma", "Microfrontends", "Git", "Jira", "Confluence", "CI/CD", "Agile", "Scrum"],
+  },
+  {
+    key: "sancho",
+    role: "Inbound Technologist",
+    company: "Sancho BBDO",
+    period: "experience.period4",
+    description: "experience.description4",
+    tech: ["Laravel", "Angular", "HTML5", "CSS3", "Figma", "Hubspot CMS", "jQuery", "PrimeNG", "Gsap", "Git", "Jira", "Confluence", "Agile", "Scrum", "SEO", "Google Analytics"],
+  },
+  {
+    key: "inp",
+    role: "Development Engineer",
+    company: "INP LTDA",
+    period: "experience.period5",
+    description: "experience.description5",
+    tech: ["Angular", "React", "HTML5", "CSS3", "jQuery", "ExtJS", "Node.js", "Express", "Symfony", "Bootstrap"],
+  },
+];
