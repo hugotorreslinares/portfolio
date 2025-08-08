@@ -8,7 +8,7 @@
     },
     "nav": {
       "home": "Inicio",
-      "about": "Acerca de",
+      "skills": "Skills",
       "services": "Servicios",
       "contact": "Contacto"
     },
@@ -26,5 +26,22 @@
     "description4": "Análisis y desarrollo de nuevas funcionalidades para clientes nacionales e internacionales. Coordinación de equipos remotos. Trabajo con Laravel, Hubspot CMS y tecnologías frontend modernas.",
     "period5": "Oct 2012 - Feb 2015",
     "description5": "Desarrollo de nuevas funcionalidades para software interno (Hércules). Participación en eventos internacionales. Uso de herramientas como ExtJS, Symfony y Bootstrap."
+  },
+  "skills": {
+    "title": "Habilidades Técnicas y Blandas",
+    "frontend": "Frontend",
+    "backend": "Backend & APIs",
+    "tools": "Herramientas & UI",
+    "softSkills": "Soft Skills",
+    "softSkillsList": {
+      "leadership": "Liderazgo técnico",
+      "communication": "Comunicación efectiva",
+      "mentoring": "Mentoría",
+      "problemSolving": "Resolución de problemas",
+      "adaptability": "Adaptabilidad",
+      "analyticalThinking": "Pensamiento analítico",
+      "teamwork": "Trabajo en equipo",
+      "proactivity": "Proactividad"
+    }
   }
   }

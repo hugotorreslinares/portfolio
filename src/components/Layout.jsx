@@ -1,15 +1,13 @@
 import Header from './Header'
 import SocialLinks from './SocialLinks'
 import Content from './Content'
-import ExperienceSection from './ExperienceSection' 
-import SkillsSection from './SkillsSection'
 
-export default function Home() {
+export default function Layout({ children }) {
   return (
     <div className="relative min-h-screen">
       <Header />
       <SocialLinks />
-      <ExperienceSection/>
+      {children}
       <Content />
     </div>
   )

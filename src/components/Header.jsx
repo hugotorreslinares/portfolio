@@ -9,7 +9,7 @@ import i18n from "../i18n";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
-  const menuLinks = []; //["home", "about", "services", "contact"];
+  const menuLinks = [{"text": "home", "route": ""}, {"text": "skills", "route": "skills"}]; //["home", "skills", "services", "contact"];
 
   const gravatarEmail = "hugotorreslinares@gmail.com";
   const gravatarUrl = `https://www.gravatar.com/avatar/${md5(
@@ -47,10 +47,10 @@ export default function Header() {
           {menuLinks.map((item) => (
             <li key={item}>
               <a
-                href={`/${item.toLowerCase()}`}
+                href={`/${item.route.toLowerCase()}`}
                 className="block px-4 py-2 text-slate-100 hover:text-slate-300 transition-colors"
               >
-                {t(`nav.${item}`)}
+                {t(`nav.${item.text}`)}
               </a>
             </li>
           ))}
