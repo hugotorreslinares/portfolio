@@ -11,5 +11,20 @@
       "about": "Acerca de",
       "services": "Servicios",
       "contact": "Contacto"
-    }
+    },
+      "experience": {
+    "title": "Experiencia Profesional",
+    "role1": "Lead Frontend Developer",
+    "period1": "Feb 2021 - Presente",
+    "description1": "Lidero el desarrollo frontend de soluciones escalables usando Vue.js, Angular y React. Implemento microfrontends, reviso código, creo nuevas funcionalidades y tests. Trabajo con PrimeNG, Figma, HTML5 y CSS3.",
+    "period2": "Abr 2018 - Feb 2021",
+    "description2": "Implementación de interfaces modernas con Angular, JavaScript y PHP. Desarrollo de microfrontends, creación de pruebas unitarias y funcionales. Fuerte enfoque en calidad de código y usabilidad.",
+    "role3": "Definition Architect / Líder Técnico",
+    "period3": "Oct 2016 - Abr 2018",
+    "description3": "Lideré la arquitectura y definición técnica de proyectos digitales para clientes como Sancho BBDO. Coordiné equipos en Colombia e India. Desarrollamos sitios web y apps móviles con tecnologías modernas.",
+    "period4": "Mar 2015 - Oct 2016",
+    "description4": "Análisis y desarrollo de nuevas funcionalidades para clientes nacionales e internacionales. Coordinación de equipos remotos. Trabajo con Laravel, Hubspot CMS y tecnologías frontend modernas.",
+    "period5": "Oct 2012 - Feb 2015",
+    "description5": "Desarrollo de nuevas funcionalidades para software interno (Hércules). Participación en eventos internacionales. Uso de herramientas como ExtJS, Symfony y Bootstrap."
+  }
   }
