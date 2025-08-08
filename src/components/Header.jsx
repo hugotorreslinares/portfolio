@@ -56,9 +56,21 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="fixed right-4 top-1/4 transform -translate-y-1/2 flex flex-col space-y-4 dark:text-slate-100">
-        <button onClick={() => changeLanguage("es")}>Es</button>
-        <button onClick={() => changeLanguage("en")}>En</button>
+      <div className="fixed right-4 transform pt-4 flex flex-col space-y-2 dark:text-slate-100">
+        <button 
+          onClick={() => changeLanguage("es")}
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-gray-200 dark:border-zinc-600 hover:bg-white dark:hover:bg-zinc-700 transition-all duration-200 shadow-sm hover:shadow-md"
+          title="Español"
+        >
+          <span className="text-lg">🇪🇸</span>
+        </button>
+        <button 
+          onClick={() => changeLanguage("en")}
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-gray-200 dark:border-zinc-600 hover:bg-white dark:hover:bg-zinc-700 transition-all duration-200 shadow-sm hover:shadow-md"
+          title="English"
+        >
+          <span className="text-lg">🇺🇸</span>
+        </button>
       </div>
     </header>
   );
