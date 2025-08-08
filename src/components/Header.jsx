@@ -27,7 +27,7 @@ export default function Header() {
             alt="Logo"
             className="w-10 h-10 rounded-full mr-2"
           />
-          <span className="text-2xl font-bold text-slate-100">
+          <span className="text-2xl font-bold text-slate-800 dark:text-slate-100">
             {t("site.name")}
           </span>
         </a>

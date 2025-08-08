@@ -5,7 +5,7 @@ import ExperienceSection from './ExperienceSection'
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-slate-600 to-white">
+    <div className="relative min-h-screen">
       <Header />
       <SocialLinks />
       <ExperienceSection/>
