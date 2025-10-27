@@ -9,7 +9,11 @@ import i18n from "../i18n";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
-  const menuLinks = [{"text": "home", "route": ""}, {"text": "skills", "route": "skills"}]; //["home", "skills", "services", "contact"];
+  const menuLinks = [
+    { text: "home", route: "" },
+    // use hash target to scroll to the section on the same page
+    { text: "skills", route: "skills" },
+  ];
 
   const gravatarEmail = "hugotorreslinares@gmail.com";
   const gravatarUrl = `https://www.gravatar.com/avatar/${md5(
@@ -44,16 +48,20 @@ export default function Header() {
             menuOpen ? "block" : "hidden"
           } md:flex absolute md:relative top-full left-0 right-0 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm md:bg-transparent shadow-md md:shadow-none border-b border-gray-200 dark:border-zinc-700 md:border-none`}
         >
-          {menuLinks.map((item, index) => (
-            <li key={`${item.text}-${index}`}>
-              <a
-                href={`/${item.route.toLowerCase()}`}
-                className="block px-4 py-2 text-slate-700 dark:text-slate-100 hover:text-slate-300 transition-colors"
-              >
-                {t(`nav.${item.text}`)}
-              </a>
-            </li>
-          ))}
+          {menuLinks.map((item, index) => {
+            const href = item.route ? `#${item.route.toLowerCase()}` : "/";
+            return (
+              <li key={`${item.text}-${index}`}>
+                <a
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-4 py-2 text-slate-700 dark:text-slate-100 hover:text-slate-300 transition-colors"
+                >
+                  {t(`nav.${item.text}`)}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
       <div className="fixed right-4 transform pt-4 flex flex-col space-y-2 dark:text-slate-100">

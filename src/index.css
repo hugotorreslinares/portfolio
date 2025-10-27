@@ -24,6 +24,69 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* PEEK-IN floating image (no crossing the page) */
+.floating-image {
+  position: fixed;
+  left: 0;
+  z-index: 80;
+  pointer-events: none;
+  transform: translateX(-85%); /* mostly off-screen, only a peek visible */
+  opacity: 0;
+  transition: transform 380ms cubic-bezier(.2,.9,.2,1), opacity 300ms ease;
+  will-change: transform, opacity, top;
+}
+
+/* when visible, slide just enough to peek (fully visible at left edge) */
+.floating-image.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* image sizing */
+.floating-image__img {
+  display: block;
+  max-width: 140px;
+  width: auto;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+
+  /* new: round shape + shadow */
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.24), 0 2px 6px rgba(2,6,23,0.12);
+
+  /* allow click handling on the image itself */
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Mobile: smaller peek and less horizontal movement */
+@media (max-width: 640px) {
+  .floating-image {
+    transform: translateX(-75%);
+  }
+  .floating-image.visible {
+    transform: translateX(0);
+  }
+  .floating-image__img {
+    max-width: 90px;
+  }
+}
+
+/* Respect users' prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .floating-image,
+  .floating-image.visible {
+    transition: none;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .animate-fade-in-down {
   animation: fadeInDown 1s ease-out;
 }

@@ -44,9 +44,9 @@ const SkillsSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white dark:bg-zinc-900 py-16 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-zinc-800 dark:text-zinc-100">
+    <section className="bg-white dark:bg-zinc-800 py-16 px-6 min-h-screen">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-12 mt-6 text-zinc-800 dark:text-zinc-100">
           {t('skills.title')}
         </h2>
 

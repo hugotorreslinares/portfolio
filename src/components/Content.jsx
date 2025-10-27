@@ -42,8 +42,7 @@ export default function Content() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center p-4">
-
+    <main className="flex flex-col items-center justify-center p-4 bg-slate-700 text-slate-100">
       <form onSubmit={handleSubmit} className="mt-12 w-full max-w-md animate-fade-in-up">
         <h2 className="text-2xl font-bold mb-4 text-center"> {t("site.subscribe")}</h2>
         <div className="flex">
