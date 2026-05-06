@@ -14,24 +14,24 @@
     },
       "experience": {
     "title": "Professional Experience",
-    "role1": "Lead Frontend Developer",
+    "role1": "Lead Frontend Developer & AI Integrator",
     "period1": "Feb 2021 - Jan 2025",
-    "description1": "Leading frontend development of scalable solutions using Vue.js, Angular and React. Implementing microfrontends, code reviews, creating new features and tests. Working with PrimeNG, Figma, HTML5 and CSS3.",
+    "description1": "Spearheading the development of high-scale frontend solutions using Vue.js, Angular, and React. Optimizing development workflows by integrating AI-assisted tools. Architecting microfrontends, leading code reviews, and delivering robust features with comprehensive test coverage using Jest and Storybook.",
     "period2": "Apr 2018 - Feb 2021",
-    "description2": "Implementation of modern interfaces with Angular, JavaScript and PHP. Development of microfrontends, creation of unit and functional tests. Strong focus on code quality and usability.",
+    "description2": "Engineered modern, high-performance interfaces using Angular, JavaScript, and PHP. Pioneered the implementation of microfrontends and established rigorous unit and functional testing standards, significantly improving code quality and user experience.",
     "role3": "Definition Architect / Technical Lead",
     "period3": "Oct 2016 - Apr 2018",
-    "description3": "Led the architecture and technical definition of digital projects for clients like Sancho BBDO. Coordinated teams in Colombia and India. Developed websites and mobile apps using modern technologies.",
+    "description3": "Architected and defined technical strategies for large-scale digital projects. Coordinated cross-functional teams across Colombia and India to deliver high-impact web and mobile applications for prestigious clients like Sancho BBDO.",
     "period4": "Mar 2015 - Oct 2016",
-    "description4": "Analysis and development of new features for national and international clients. Remote team coordination. Work with Laravel, Hubspot CMS and modern frontend technologies.",
+    "description4": "Designed and implemented critical features for global clients, leveraging Laravel and Hubspot CMS. Successfully managed remote teams and drove the adoption of modern frontend practices to enhance project scalability.",
     "period5": "Oct 2012 - Feb 2015",
-    "description5": "Development of new features for internal software (Hercules). Participation in international events. Use of tools like ExtJS, Symfony and Bootstrap."
+    "description5": "Developed and maintained core features for the internal Hercules software. Represented the company in international tech events and utilized a diverse stack including ExtJS, Symfony, and Bootstrap to deliver reliable solutions."
   },
   "skills": {
     "title": "Technical and Soft Skills",
     "frontend": "Frontend",
     "backend": "Backend & APIs",
-    "tools": "Tools & UI",
+    "tools": "Tools & AI",
     "softSkills": "Soft Skills",
     "softSkillsList": {
       "leadership": "Technical Leadership",

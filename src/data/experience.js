@@ -5,7 +5,7 @@ export const experienceData = [
     company: "Zemoga",
     period: "experience.period1",
     description: "experience.description1",
-    tech: ["Vue.js", "Angular", "React", "Microfrontends", "PrimeNG", "Figma", "HTML5", "CSS3", "Unit Testing", "Jest", "Storybook", "Git", "Jira", "Confluence", "CI/CD", "Agile", "Scrum"],
+    tech: ["Vue.js", "Angular", "React", "Microfrontends", "PrimeNG", "Figma", "HTML5", "CSS3", "Unit Testing", "Jest", "Storybook", "AI-Assisted Development", "Git", "Jira", "Confluence", "CI/CD", "Agile", "Scrum"],
   },
   {
     key: "globant",
