@@ -27,6 +27,7 @@ const tools = [
   { name: "ExtJS", level: 2 },
   { name: "Hubspot CMS", level: 3 },
   { name: "Unit Testing", level: 4 },
+  { name: "AI-Assisted Development", level: 4 },
 ];
 
 const softSkills = [
