@@ -1,5 +1,27 @@
 export const experienceData = [
   {
+    key: "globant",
+    role: "Web UI Sr",
+    company: "Globant",
+    period: "Apr 2025 - Mar 2026",
+    description:
+      "Contributed to the enhancement and maintenance of enterprise frontend applications across multiple projects using Vue.js, Svelte, AngularJS, and JavaScript. Worked on improving component structure, accessibility, UI consistency, and maintainability while collaborating with product and design teams to implement interfaces based on Figma specifications. Participated in peer code reviews, troubleshooting, and frontend optimizations, helping ensure stable and scalable user experiences in agile environments.",
+    tech: [
+      "Vue.js",
+      "Svelte",
+      "AngularJS",
+      "JavaScript",
+      "CSS",
+      "Git",
+      "Figma",
+      "Unit Testing",
+      "Accessibility",
+      "Component Architecture",
+      "Agile",
+      "Scrum",
+    ],
+  },
+  {
     key: "zemoga",
     role: "Lead Frontend Developer & AI Integrator",
     company: "Zemoga",
@@ -23,29 +45,6 @@ export const experienceData = [
       "Git",
       "CI/CD",
       "AI-Assisted Development",
-      "Agile",
-      "Scrum",
-    ],
-  },
-
-  {
-    key: "globant",
-    role: "Web UI Sr",
-    company: "Globant",
-    period: "Apr 2025 - Mar 2026",
-    description:
-      "Contributed to the enhancement and maintenance of enterprise frontend applications across multiple projects using Vue.js, Svelte, AngularJS, and JavaScript. Worked on improving component structure, accessibility, UI consistency, and maintainability while collaborating with product and design teams to implement interfaces based on Figma specifications. Participated in peer code reviews, troubleshooting, and frontend optimizations, helping ensure stable and scalable user experiences in agile environments.",
-    tech: [
-      "Vue.js",
-      "Svelte",
-      "AngularJS",
-      "JavaScript",
-      "CSS",
-      "Git",
-      "Figma",
-      "Unit Testing",
-      "Accessibility",
-      "Component Architecture",
       "Agile",
       "Scrum",
     ],
