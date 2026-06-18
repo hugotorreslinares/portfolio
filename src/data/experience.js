@@ -1,33 +1,44 @@
 export const experienceData = [
   {
     key: "globant",
-    role: "Web UI Sr",
+    role: "Senior Frontend Engineer",
     company: "Globant",
-    period: "Apr 2025 - Mar 2026",
+    period: "Jan 2025 - Present",
     description:
-      "Contributed to the enhancement and maintenance of enterprise frontend applications across multiple projects using Vue.js, Svelte, AngularJS, and JavaScript. Worked on improving component structure, accessibility, UI consistency, and maintainability while collaborating with product and design teams to implement interfaces based on Figma specifications. Participated in peer code reviews, troubleshooting, and frontend optimizations, helping ensure stable and scalable user experiences in agile environments.",
+      "Leading the development of enterprise-scale web applications and AI-powered platforms for global clients. Responsible for designing scalable frontend architectures, implementing reusable component systems, integrating AI services and APIs, and driving frontend best practices. Collaborate closely with product managers, designers, backend engineers, and distributed teams to deliver high-quality solutions focused on performance, maintainability, accessibility, and user experience. Actively participate in technical leadership, code reviews, architectural discussions, and mentoring initiatives.",
     tech: [
       "Vue.js",
-      "Svelte",
-      "AngularJS",
+      "React",
+      "TypeScript",
       "JavaScript",
-      "CSS",
-      "Git",
-      "Figma",
-      "Unit Testing",
+      "Svelte",
+      "AI Platforms",
+      "REST APIs",
+      "Microfrontends",
+      "Storybook",
+      "Vitest",
+      "Jest",
       "Accessibility",
       "Component Architecture",
+      "Tailwind CSS",
+      "Figma",
+      "Git",
+      "CI/CD",
+      "Technical Leadership",
+      "Code Reviews",
+      "Mentoring",
       "Agile",
       "Scrum",
     ],
   },
+
   {
     key: "zemoga",
-    role: "Lead Frontend Developer & AI Integrator",
+    role: "Lead Frontend Developer",
     company: "Zemoga",
     period: "Feb 2021 - Jan 2025",
     description:
-      "Worked as a Lead Frontend Developer contributing to the architecture and development of scalable web applications using Vue.js, Angular, and React. Participated in the implementation of microfrontend solutions, reusable component structures, and testing strategies to improve maintainability and collaboration across teams. Collaborated closely with product, backend, QA, and design teams to deliver user-focused digital experiences while supporting code quality through reviews, unit testing, and continuous improvement practices. Also explored and integrated AI-assisted development workflows to optimize productivity and streamline repetitive engineering tasks.",
+      "Led frontend development initiatives for international clients, delivering scalable web applications and complex digital products using Vue.js, Angular, and React. Defined frontend architecture standards, implemented microfrontend solutions, established testing strategies, and guided development teams through code reviews and technical mentoring. Worked closely with cross-functional teams to ensure high-quality user experiences, maintainable codebases, and efficient delivery processes.",
     tech: [
       "Vue.js",
       "Angular",
@@ -44,7 +55,9 @@ export const experienceData = [
       "CSS3",
       "Git",
       "CI/CD",
-      "AI-Assisted Development",
+      "Technical Leadership",
+      "Code Reviews",
+      "Mentoring",
       "Agile",
       "Scrum",
     ],
@@ -52,11 +65,11 @@ export const experienceData = [
 
   {
     key: "globant_old",
-    role: "Web UI Semi Sr - ADV",
+    role: "Web UI Developer",
     company: "Globant",
-    period: "Feb 2018 - Feb 2021",
+    period: "Apr 2018 - Feb 2021",
     description:
-      "Worked on the development of modern web interfaces using Angular and TypeScript for enterprise-level internal platforms. Contributed to the creation of reusable components, frontend improvements, and UI updates aligned with business and design requirements. Collaborated with multidisciplinary teams in agile environments, participating in code reviews, feature implementation, and continuous frontend improvements focused on usability and maintainability.",
+      "Developed enterprise-grade web applications and internal platforms using Angular and TypeScript. Built reusable UI components, improved frontend architecture, and collaborated with multidisciplinary teams to deliver scalable and maintainable solutions. Contributed to code quality initiatives through testing, code reviews, and continuous improvement practices within agile development environments.",
     tech: [
       "Angular",
       "TypeScript",
@@ -74,21 +87,21 @@ export const experienceData = [
 
   {
     key: "quadi",
-    role: "Technical Leader / Definition Architect",
+    role: "Technical Lead / Solution Architect",
     company: "Quadi SAS",
     period: "Oct 2016 - Apr 2018",
     description:
-      "Participated in the coordination and technical definition of web and mobile projects for national and international clients. Worked closely with distributed teams across Colombia and India, contributing to frontend and backend development tasks, technical analysis, and feature planning. Collaborated with designers, developers, and stakeholders to build responsive and functional digital solutions while adapting to different project requirements and technologies.",
+      "Led the technical definition and architecture of digital products for national and international clients. Coordinated distributed teams across Colombia and India while overseeing solution design, technology selection, development planning, and technical execution. Collaborated with stakeholders to deliver responsive web and mobile applications aligned with business goals and user needs.",
     tech: [
       "Angular",
       "Laravel",
       "GSAP",
       "OctoberCMS",
-      "Figma",
       "JavaScript",
       "HTML5",
       "CSS3",
       "Git",
+      "Software Architecture",
       "Technical Leadership",
       "Agile",
       "Scrum",
@@ -97,18 +110,17 @@ export const experienceData = [
 
   {
     key: "sancho",
-    role: "Inbound Technologist",
+    role: "Full Stack Developer",
     company: "Sancho BBDO",
     period: "Mar 2015 - Oct 2016",
     description:
-      "Worked as a full-stack developer supporting the development of digital marketing and web platform solutions using Laravel, PHP, and Angular. Contributed to frontend implementation, backend integrations, and HubSpot CMS customization while collaborating with multidisciplinary teams to deliver interactive and user-oriented experiences. Participated in API integrations, interface development, and continuous improvements for marketing-focused digital products.",
+      "Developed digital experiences and marketing platforms for national and international brands using Laravel, PHP, Angular, and HubSpot CMS. Built frontend interfaces, backend integrations, and custom CMS solutions while collaborating with multidisciplinary teams to deliver engaging, data-driven, and user-focused digital products.",
     tech: [
       "Laravel",
       "PHP",
       "Angular",
       "HubSpot CMS",
       "REST APIs",
-      "Figma",
       "JavaScript",
       "HTML5",
       "CSS3",
@@ -123,11 +135,11 @@ export const experienceData = [
 
   {
     key: "inp",
-    role: "Development Engineer",
+    role: "Software Engineer",
     company: "INP LTDA",
     period: "Oct 2012 - Feb 2015",
     description:
-      "Contributed to the development and maintenance of internal business applications using technologies such as ExtJS, Symfony, Node.js, and JavaScript. Worked on frontend and backend features, bug fixing, and application improvements while collaborating with technical teams to support business processes and software reliability. Gained experience working with different frameworks and adapting to evolving project and client requirements.",
+      "Developed and maintained business-critical applications using ExtJS, Symfony, Node.js, and JavaScript. Worked across frontend and backend layers, implementing new features, improving system reliability, and supporting internal business operations through scalable software solutions.",
     tech: [
       "ExtJS",
       "Symfony",
