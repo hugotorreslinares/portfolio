@@ -1,8 +1,9 @@
 import { Suspense, lazy } from 'react'
+import Hero from './Hero.jsx'
+import SkillsSection from './SkillsSection.jsx'
 
 // Lazy load ExperienceSection
 const ExperienceSection = lazy(() => import('./ExperienceSection'))
-import SkillsSection from './SkillsSection.jsx'
 
 // Loading component
 const SectionLoading = () => (
@@ -14,6 +15,7 @@ const SectionLoading = () => (
 export default function HomePage() {
   return (
     <main>
+      <Hero />
       <Suspense fallback={<SectionLoading />}>
         <ExperienceSection />
       </Suspense>
