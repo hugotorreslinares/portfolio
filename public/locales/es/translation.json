@@ -1,6 +1,11 @@
 {
     "site": {
       "name": "Hugo Torres",
+      "hero": {
+        "title": "Senior Frontend Engineer & Líder Técnico",
+        "subtitle": "Construyendo aplicaciones web escalables, arquitecturas frontend modernas y productos impulsados por IA por más de 13 años.",
+        "description": "Ayudo a las empresas a construir aplicaciones web modernas, escalables y mantenibles. Con más de 13 años de experiencia en startups, agencias digitales y firmas de consultoría global, he liderado equipos frontend, diseñado arquitecturas empresariales y entregado productos utilizando Vue.js, React, Angular y TypeScript. Más allá de escribir código, me apasiona mejorar los procesos de ingeniería, mentorizar desarrolladores y aprovechar la IA para acelerar la entrega de software sin comprometer la calidad. Creo que el gran software se construye a través de una arquitectura limpia, una colaboración sólida y un aprendizaje continuo."
+      },
       "welcome": "Bienvenido a mi sitio web",
       "clickToChange": "Haz clic en la imagen para cambiarla",
       "subscribe": "Recibe mi hoja de vida en tu E-mail",
