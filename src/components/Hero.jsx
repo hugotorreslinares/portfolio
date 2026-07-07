@@ -9,7 +9,7 @@ export default function Hero() {
   )}?s=200`;
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 px-4">
+    <section className="bg-slate-100 dark:bg-slate-800 relative overflow-hidden py-16 md:py-24 px-4">
       <div className="container mx-auto max-w-5xl">
         <div className="relative group animate-fade-in-up">
           {/* Glowing Gradient Border Effect */}
