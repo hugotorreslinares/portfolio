@@ -15,7 +15,7 @@ export default function Hero() {
           {/* Glowing Gradient Border Effect */}
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
 
-          <div className="relative flex flex-col md:flex-row items-center gap-12 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-gray-200/50 dark:border-zinc-800/50 shadow-2xl">
+          <div className="relative flex flex-col md:flex-row items-center gap-12 bg-black/80 dark:bg-zinc-900/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-gray-200/50 dark:border-zinc-800/50 shadow-2xl">
             {/* Gravatar Image */}
             <div className="relative flex-shrink-0 animate-fade-in-down">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
