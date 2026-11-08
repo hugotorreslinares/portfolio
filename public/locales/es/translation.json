@@ -1,11 +1,14 @@
 {
     "site": {
       "name": "Hugo Torres",
+      "seo": {
+        "description": "Ingeniero frontend senior con más de 13 años de experiencia creando aplicaciones web con React, Vue, Angular y TypeScript."
+      },
       "hero": {
         "eyebrow": "",
-        "title": "Ingeniero frontend senior",
-        "subtitle": "Ayudo a los equipos frontend a mantener las entregas en marcha cuando un proyecto se complica.",
-        "description": "He desarrollado aplicaciones web con React, Vue, Angular y TypeScript. En Zemoga resolví bloqueos durante etapas críticas y ayudé a desarrolladores junior a ponerse al día.",
+        "title": "Hugo Torres | Ingeniero frontend senior",
+        "subtitle": "Ingeniero frontend senior",
+        "description": "Desarrollo aplicaciones web escalables y de alto rendimiento utilizando tecnologías frontend modernas y herramientas de desarrollo potenciadas por inteligencia artificial. Con experiencia en React, Vue, Angular y TypeScript, me enfoco en crear soluciones mantenibles, optimizar los flujos de desarrollo y ofrecer experiencias de usuario excepcionales.",
         "experienceLink": "Ver experiencia",
         "contactLink": "Contactarme",
         "imageAlt": "Hugo Torres"

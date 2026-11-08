@@ -1,4 +1,5 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useRef } from 'react'
+import { useIsomorphicLayoutEffect } from '../lib/useIsomorphicLayoutEffect.js'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 
@@ -8,7 +9,7 @@ export default function HeroV2() {
   const { t } = useTranslation()
   const scopeRef = useRef(null)
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const ctx = gsap.context(() => {
@@ -31,7 +32,7 @@ export default function HeroV2() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
         <div data-hero="text">
           <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl">
-            {t('site.hero.title')}
+            {t('site.name')}
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300">{t('site.hero.subtitle')}</p>
           <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">{t('site.hero.description')}</p>

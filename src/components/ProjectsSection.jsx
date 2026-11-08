@@ -1,4 +1,5 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useRef } from 'react'
+import { useIsomorphicLayoutEffect } from '../lib/useIsomorphicLayoutEffect.js'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -10,7 +11,7 @@ export default function ProjectsSection() {
   const { t } = useTranslation()
   const scopeRef = useRef(null)
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const ctx = gsap.context(() => {

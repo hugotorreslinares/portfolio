@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import Layout from './components/Layout.jsx'
 
@@ -16,7 +16,7 @@ const LoadingSpinner = () => (
 
 const App = () => {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <>
       <Layout>
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
@@ -27,7 +27,7 @@ const App = () => {
           </Routes>
         </Suspense>
       </Layout>
-    </Router>
+    </>
   )
 }
 
