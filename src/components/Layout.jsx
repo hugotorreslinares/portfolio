@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react'
 
 // Lazy load layout components
 const Header = lazy(() => import('./Header'))
-const SocialLinks = lazy(() => import('./SocialLinks'))
 const Content = lazy(() => import('./Content'))
 
 // Loading component for layout parts
@@ -17,10 +16,6 @@ export default function Layout({ children }) {
     <div className="relative min-h-screen pt-20">
       <Suspense fallback={<LayoutLoading />}>
         <Header />
-      </Suspense>
-      
-      <Suspense fallback={<LayoutLoading />}>
-        <SocialLinks />
       </Suspense>
       
       {children}

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import Layout from './components/Layout.jsx'
-import FloatingImage from './components/FloatingImage.jsx'
 
 // Lazy load components
 const HomePage = lazy(() => import('./components/HomePage.jsx'))
@@ -18,7 +17,6 @@ const App = () => {
   return (
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Layout>
-        <FloatingImage />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             <Route path="/" element={<HomePage />} />

@@ -2,23 +2,53 @@
     "site": {
       "name": "Hugo Torres",
       "hero": {
-        "title": "Senior Frontend Engineer & Technical Leader",
-        "subtitle": "Building scalable web applications, modern frontend architectures, and AI-powered products for more than 13 years.",
-        "description": "I help companies build modern, scalable, and maintainable web applications. With 13+ years of experience, I specialize in frontend architecture, technical leadership, and AI-powered solutions using Vue.js, React, Angular, and TypeScript."
+        "eyebrow": "13+ years of experience",
+        "title": "Senior Frontend Engineer",
+        "subtitle": "I help frontend teams keep delivery moving when a project gets difficult.",
+        "description": "I’ve built web applications with React, Vue, Angular, and TypeScript. At Zemoga, I resolved blockers during critical delivery periods and helped junior developers get up to speed.",
+        "experienceLink": "View experience",
+        "contactLink": "Get in touch"
       },
-      "welcome": "Welcome to My Website",
-      "clickToChange": "Click the image to change it",
-      "subscribe": "Receive my CV in your e-mail",
-      "pdfSentSuccess": "Check your email"
+      "language": "Choose language",
+      "contact": {
+        "title": "Get in touch",
+        "description": "For opportunities and professional inquiries, email me or connect on LinkedIn.",
+        "email": "Email Hugo"
+      }
     },
     "nav": {
       "home": "Home",
+      "experience": "Experience",
       "skills": "Skills",
-      "services": "Services",
-      "contact": "Contact"
+      "contact": "Contact",
+      "label": "Main navigation",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
     },
       "experience": {
-    "title": "Professional Experience",
+    "title": "Professional experience",
+    "technologies": "Selected technologies",
+    "roles": {
+      "globantCurrent": "Senior Frontend Engineer",
+      "zemoga": "Lead Frontend Developer",
+      "globantEarlier": "Web UI Developer",
+      "quadi": "Technical Lead / Solution Architect",
+      "sancho": "Full Stack Developer",
+      "inp": "Software Engineer"
+    },
+    "periods": {
+      "globantCurrent": "Jan 2025 - Present",
+      "zemoga": "Feb 2021 - Jan 2025",
+      "globantEarlier": "Apr 2018 - Feb 2021",
+      "quadi": "Oct 2016 - Apr 2018",
+      "sancho": "Mar 2015 - Oct 2016",
+      "inp": "Oct 2012 - Feb 2015"
+    },
+    "descriptions": {
+      "globantCurrent": "Contribute frontend implementation across several smaller client projects, collaborating with project teams to deliver features and solve day-to-day engineering needs.",
+      "zemoga": "Led the frontend team on one long-running client project. During critical delivery periods, took responsibility for resolving issues and keeping delivery on schedule. Helped junior developers get up to speed with the project and team.",
+      "globantEarlier": "Contributed as a frontend developer to a long-running enterprise project, building user interface features with Angular and TypeScript as part of a larger team."
+    },
     "role1": "Lead Frontend Developer & AI Integrator",
     "period1": "Feb 2021 - Jan 2025",
     "description1": "Leading frontend development of scalable solutions using Vue.js, Angular and React. Integrating AI-assisted tools to optimize development workflows. Implementing microfrontends, code reviews, creating new features and tests. Working with PrimeNG, Figma, HTML5 and CSS3.",
@@ -33,7 +63,7 @@
     "description5": "Developed and maintained core features for the internal Hercules software. Represented the company in international tech events and utilized a diverse stack including ExtJS, Symfony, and Bootstrap to deliver reliable solutions."
   },
   "skills": {
-    "title": "Technical and Soft Skills",
+    "title": "Core technologies",
     "frontend": "Frontend",
     "backend": "Backend & APIs",
     "tools": "Tools & AI",

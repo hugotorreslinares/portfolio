@@ -1,85 +1,62 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
-import { Analytics } from "@vercel/analytics/react"
-import md5 from "md5";
-import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
+import { useTranslation } from 'react-i18next'
+import i18n from '../i18n'
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const { t } = useTranslation();
-  const menuLinks = [
-    { text: "home", route: "" },
-    // use hash target to scroll to the section on the same page
-    { text: "skills", route: "skills" },
-  ];
+  const [menuOpen, setMenuOpen] = useState(false)
+  const { t } = useTranslation()
+  const links = [
+    { label: t('nav.experience'), href: '#experience' },
+    { label: t('nav.skills'), href: '#skills' },
+    { label: t('nav.contact'), href: '#contact' },
+  ]
 
-  const gravatarEmail = "hugotorreslinares@gmail.com";
-  const gravatarUrl = `https://www.gravatar.com/avatar/${md5(
-    gravatarEmail.toLowerCase().trim()
-  )}?s=100`;
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-zinc-700">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
       <Analytics />
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/" className="flex items-center">
-          <img
-            src={gravatarUrl}
-            alt="Logo"
-            className="w-10 h-10 rounded-full mr-2"
-          />
-          <span className="text-2xl font-bold text-slate-800 dark:text-slate-100">
-            {t("site.name")}
-          </span>
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label={t('nav.label')}>
+        <a href="#home" className="text-lg font-semibold tracking-tight text-slate-900" onClick={() => setMenuOpen(false)}>
+          {t('site.name')}
         </a>
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-        <ul
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } md:flex absolute md:relative top-full left-0 right-0 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm md:bg-transparent shadow-md md:shadow-none border-b border-gray-200 dark:border-zinc-700 md:border-none`}
-        >
-          {menuLinks.map((item, index) => {
-            const href = item.route ? `#${item.route.toLowerCase()}` : "/";
-            return (
-              <li key={`${item.text}-${index}`}>
-                <a
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-2 text-slate-700 dark:text-slate-100 hover:text-slate-300 transition-colors"
-                >
-                  {t(`nav.${item.text}`)}
+
+        <div className="flex items-center gap-5">
+          <ul className={`${menuOpen ? 'absolute inset-x-0 top-full flex flex-col border-b border-slate-200 bg-white px-5 py-3 shadow-sm' : 'hidden'} md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}>
+            {links.map((link) => (
+              <li key={link.href}>
+                <a className="block py-2 text-sm font-medium text-slate-600 transition hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 md:py-0" href={link.href} onClick={() => setMenuOpen(false)}>
+                  {link.label}
                 </a>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
+
+          <div className="flex items-center gap-1 text-sm" aria-label={t('site.language')}>
+            {['en', 'es'].map((language) => (
+              <button
+                key={language}
+                type="button"
+                onClick={() => i18n.changeLanguage(language)}
+                aria-pressed={i18n.resolvedLanguage?.startsWith(language)}
+                className={`rounded px-2 py-1 font-medium uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${i18n.resolvedLanguage?.startsWith(language) ? 'text-slate-950' : 'text-slate-500 hover:text-slate-900'}`}
+              >
+                {language}
+              </button>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setMenuOpen((open) => !open)}
+            className="rounded p-1 text-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:hidden"
+            aria-label={menuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X size={21} /> : <Menu size={21} />}
+          </button>
+        </div>
       </nav>
-      <div className="fixed right-4 transform pt-4 flex flex-col space-y-2 dark:text-slate-100">
-        <button 
-          onClick={() => changeLanguage("es")}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-gray-200 dark:border-zinc-600 hover:bg-white dark:hover:bg-zinc-700 transition-all duration-200 shadow-sm hover:shadow-md"
-          title="Español"
-        >
-          <span className="text-lg">🇪🇸</span>
-        </button>
-        <button 
-          onClick={() => changeLanguage("en")}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-gray-200 dark:border-zinc-600 hover:bg-white dark:hover:bg-zinc-700 transition-all duration-200 shadow-sm hover:shadow-md"
-          title="English"
-        >
-          <span className="text-lg">🇺🇸</span>
-        </button>
-      </div>
     </header>
-  );
+  )
 }

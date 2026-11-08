@@ -2,23 +2,53 @@
     "site": {
       "name": "Hugo Torres",
       "hero": {
-        "title": "Senior Frontend Engineer & Líder Técnico",
-        "subtitle": "Construyendo aplicaciones web escalables, arquitecturas frontend modernas y productos impulsados por IA por más de 13 años.",
-        "description": "Desarrollo aplicaciones web modernas, escalables y mantenibles para empresas de distintos sectores. Con más de 13 años de experiencia, me especializo en arquitectura frontend, liderazgo técnico e integración de soluciones basadas en IA utilizando Vue.js, React, Angular y TypeScript."
+        "eyebrow": "",
+        "title": "Ingeniero frontend senior",
+        "subtitle": "Ayudo a los equipos frontend a mantener las entregas en marcha cuando un proyecto se complica.",
+        "description": "He desarrollado aplicaciones web con React, Vue, Angular y TypeScript. En Zemoga resolví bloqueos durante etapas críticas y ayudé a desarrolladores junior a ponerse al día.",
+        "experienceLink": "Ver experiencia",
+        "contactLink": "Contactarme"
       },
-      "welcome": "Bienvenido a mi sitio web",
-      "clickToChange": "Haz clic en la imagen para cambiarla",
-      "subscribe": "Recibe mi hoja de vida en tu E-mail",
-      "pdfSentSuccess": "Revisa tu correo"
+      "language": "Elegir idioma",
+      "contact": {
+        "title": "Contacto",
+        "description": "Para oportunidades y consultas profesionales, escríbeme o conéctate conmigo en LinkedIn.",
+        "email": "Escribir a Hugo"
+      }
     },
     "nav": {
       "home": "Inicio",
-      "skills": "Skills",
-      "services": "Servicios",
-      "contact": "Contacto"
+      "experience": "Experiencia",
+      "skills": "Tecnologías",
+      "contact": "Contacto",
+      "label": "Navegación principal",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú"
     },
       "experience": {
-    "title": "Experiencia Profesional",
+    "title": "Experiencia profesional",
+    "technologies": "Tecnologías seleccionadas",
+    "roles": {
+      "globantCurrent": "Ingeniero frontend senior",
+      "zemoga": "Desarrollador frontend líder",
+      "globantEarlier": "Desarrollador de interfaces web",
+      "quadi": "Líder técnico / Arquitecto de soluciones",
+      "sancho": "Desarrollador full stack",
+      "inp": "Ingeniero de software"
+    },
+    "periods": {
+      "globantCurrent": "Ene 2025 - Actualidad",
+      "zemoga": "Feb 2021 - Ene 2025",
+      "globantEarlier": "Abr 2018 - Feb 2021",
+      "quadi": "Oct 2016 - Abr 2018",
+      "sancho": "Mar 2015 - Oct 2016",
+      "inp": "Oct 2012 - Feb 2015"
+    },
+    "descriptions": {
+      "globantCurrent": "Aporto al desarrollo frontend en varios proyectos pequeños para clientes, colaborando con los equipos para entregar funcionalidades y resolver necesidades de ingeniería del día a día.",
+      "zemoga": "Lideré el equipo frontend en un proyecto de larga duración para un cliente. En momentos críticos, asumí la responsabilidad de resolver problemas y mantener las entregas a tiempo. Apoyé a desarrolladores junior para que se pusieran al día con el proyecto y el equipo.",
+      "globantEarlier": "Contribuí como desarrollador frontend en un proyecto empresarial de larga duración, creando funcionalidades de interfaz con Angular y TypeScript como parte de un equipo amplio."
+    },
     "role1": "Lead Frontend Developer & Integrador de IA",
     "period1": "Feb 2021 - Ene 2025",
     "description1": "Lidero el desarrollo frontend de soluciones escalables usando Vue.js, Angular y React. Integro herramientas asistidas por IA para optimizar los flujos de trabajo. Implemento microfrontends, reviso código, creo nuevas funcionalidades y tests. Trabajo con PrimeNG, Figma, HTML5 y CSS3.",
@@ -33,7 +63,7 @@
     "description5": "Desarrollé y mantuve funcionalidades principales para el software interno Hércules. Representé a la empresa en eventos tecnológicos internacionales y utilicé un stack diverso que incluye ExtJS, Symfony y Bootstrap para entregar soluciones confiables."
   },
   "skills": {
-    "title": "Habilidades Técnicas y Blandas",
+    "title": "Tecnologías principales",
     "frontend": "Frontend",
     "backend": "Backend & APIs",
     "tools": "Herramientas e IA",

@@ -5,32 +5,34 @@ export default function ExperienceSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white dark:bg-zinc-900 py-16 px-6">
-      <div className="max-w-4xl mx-auto">
-        <h3 className="text-2xl font-bold mb-12 text-zinc-800 dark:text-zinc-100">
+    <section id="experience" className="scroll-mt-24 bg-white px-5 py-16 md:py-20">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-10 text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
           {t("experience.title")}
-        </h3>
+        </h2>
 
-        <div className="space-y-10">
+        <div className="divide-y divide-slate-200">
           {experienceData.map((item) => (
-            <div key={item.key} className="border-l-4 border-zinc-300 dark:border-zinc-700 pl-6 relative">
-              <div className="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-zinc-400 dark:bg-zinc-600" />
-              <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
-                {t(item.role)}
-              </h3>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">{item.company} • {t(item.period)}</p>
-              <p className="mt-2 text-zinc-700 dark:text-zinc-300">{t(item.description)}</p>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {item.tech.map((tech, i) => (
-                  <li
-                    key={i}
-                    className="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-sm px-3 py-1 rounded-full"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <article
+              key={item.key}
+              className={`grid gap-3 py-7 first:pt-0 md:grid-cols-[minmax(10rem,0.75fr)_2fr] md:gap-10 ${
+                item.key === 'zemoga' ? 'rounded-r-md border-l-2 border-blue-700 bg-slate-50 pl-5' : ''
+              }`}
+            >
+              <p className="text-sm font-medium text-slate-500">{t(item.period)}</p>
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900">{t(item.role)}</h3>
+                <p className="mt-1 text-sm font-medium text-slate-600">{item.company}</p>
+                <p className="mt-3 max-w-3xl leading-7 text-slate-600">{t(item.description)}</p>
+                <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-1.5" aria-label={t('experience.technologies')}>
+                  {item.tech.slice(0, 6).map((tech) => (
+                    <li key={tech} className="text-xs font-medium text-slate-500 after:ml-2 after:text-slate-300 after:content-['·'] last:after:content-none">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
           ))}
         </div>
       </div>

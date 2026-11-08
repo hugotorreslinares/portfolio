@@ -7,8 +7,8 @@ const ExperienceSection = lazy(() => import('./ExperienceSection'))
 
 // Loading component
 const SectionLoading = () => (
-  <div className="flex items-center justify-center p-8">
-    <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-500"></div>
+    <div className="mx-auto max-w-6xl px-5 py-12 text-sm text-slate-500">
+      Loading experience…
   </div>
 )
 
@@ -21,7 +21,7 @@ export default function HomePage() {
       </Suspense>
       
       {/* target for header #skills link */}
-      <section id="skills">
+      <section id="skills" className="scroll-mt-24">
         <SkillsSection />
       </section>
     </main>

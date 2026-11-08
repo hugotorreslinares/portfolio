@@ -1,75 +1,47 @@
 export const experienceData = [
   {
     key: "globant",
-    role: "Senior Frontend Engineer",
+    role: "experience.roles.globantCurrent",
     company: "Globant",
-    period: "Jan 2025 - Present",
-    description:
-      "Leading the development of enterprise-scale web applications and AI-powered platforms for global clients. Responsible for designing scalable frontend architectures, implementing reusable component systems, integrating AI services and APIs, and driving frontend best practices. Collaborate closely with product managers, designers, backend engineers, and distributed teams to deliver high-quality solutions focused on performance, maintainability, accessibility, and user experience. Actively participate in technical leadership, code reviews, architectural discussions, and mentoring initiatives.",
+    period: "experience.periods.globantCurrent",
+    description: "experience.descriptions.globantCurrent",
     tech: [
       "Vue.js",
       "React",
       "TypeScript",
       "JavaScript",
-      "Svelte",
-      "AI Platforms",
-      "REST APIs",
-      "Microfrontends",
       "Storybook",
       "Vitest",
       "Jest",
       "Accessibility",
-      "Component Architecture",
       "Tailwind CSS",
       "Figma",
-      "Git",
-      "CI/CD",
-      "Technical Leadership",
-      "Code Reviews",
-      "Mentoring",
-      "Agile",
-      "Scrum",
     ],
   },
 
   {
     key: "zemoga",
-    role: "Lead Frontend Developer",
+    role: "experience.roles.zemoga",
     company: "Zemoga",
-    period: "Feb 2021 - Jan 2025",
-    description:
-      "Led frontend development initiatives for international clients, delivering scalable web applications and complex digital products using Vue.js, Angular, and React. Defined frontend architecture standards, implemented microfrontend solutions, established testing strategies, and guided development teams through code reviews and technical mentoring. Worked closely with cross-functional teams to ensure high-quality user experiences, maintainable codebases, and efficient delivery processes.",
+    period: "experience.periods.zemoga",
+    description: "experience.descriptions.zemoga",
     tech: [
       "Vue.js",
       "Angular",
       "React",
       "TypeScript",
-      "Microfrontends",
-      "PrimeNG",
-      "Storybook",
-      "Jest",
-      "Unit Testing",
-      "Figma",
       "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Git",
-      "CI/CD",
       "Technical Leadership",
-      "Code Reviews",
       "Mentoring",
-      "Agile",
-      "Scrum",
     ],
   },
 
   {
     key: "globant_old",
-    role: "Web UI Developer",
+    role: "experience.roles.globantEarlier",
     company: "Globant",
-    period: "Apr 2018 - Feb 2021",
-    description:
-      "Developed enterprise-grade web applications and internal platforms using Angular and TypeScript. Built reusable UI components, improved frontend architecture, and collaborated with multidisciplinary teams to deliver scalable and maintainable solutions. Contributed to code quality initiatives through testing, code reviews, and continuous improvement practices within agile development environments.",
+    period: "experience.periods.globantEarlier",
+    description: "experience.descriptions.globantEarlier",
     tech: [
       "Angular",
       "TypeScript",
@@ -87,11 +59,11 @@ export const experienceData = [
 
   {
     key: "quadi",
-    role: "Technical Lead / Solution Architect",
+    role: "experience.roles.quadi",
     company: "Quadi SAS",
-    period: "Oct 2016 - Apr 2018",
+    period: "experience.periods.quadi",
     description:
-      "Led the technical definition and architecture of digital products for national and international clients. Coordinated distributed teams across Colombia and India while overseeing solution design, technology selection, development planning, and technical execution. Collaborated with stakeholders to deliver responsive web and mobile applications aligned with business goals and user needs.",
+      "Led technical definition and delivery for digital products, coordinating teams across Colombia and India. Worked with stakeholders on solution design, technology choices, and development planning.",
     tech: [
       "Angular",
       "Laravel",
@@ -110,11 +82,11 @@ export const experienceData = [
 
   {
     key: "sancho",
-    role: "Full Stack Developer",
+    role: "experience.roles.sancho",
     company: "Sancho BBDO",
-    period: "Mar 2015 - Oct 2016",
+    period: "experience.periods.sancho",
     description:
-      "Developed digital experiences and marketing platforms for national and international brands using Laravel, PHP, Angular, and HubSpot CMS. Built frontend interfaces, backend integrations, and custom CMS solutions while collaborating with multidisciplinary teams to deliver engaging, data-driven, and user-focused digital products.",
+      "Developed digital experiences and marketing platforms using Laravel, PHP, Angular, and HubSpot CMS. Built frontend interfaces and backend integrations with multidisciplinary teams.",
     tech: [
       "Laravel",
       "PHP",
@@ -135,9 +107,9 @@ export const experienceData = [
 
   {
     key: "inp",
-    role: "Software Engineer",
+    role: "experience.roles.inp",
     company: "INP LTDA",
-    period: "Oct 2012 - Feb 2015",
+    period: "experience.periods.inp",
     description:
       "Developed and maintained business-critical applications using ExtJS, Symfony, Node.js, and JavaScript. Worked across frontend and backend layers, implementing new features, improving system reliability, and supporting internal business operations through scalable software solutions.",
     tech: [
