@@ -1,6 +1,18 @@
 [
-  { "key": "tallerdelamancha", "name": "Taller de la Mancha", "url": "https://tallerdelamancha.com", "image":"https://tallerdelamancha.com/wp-content/uploads/2026/07/cropped-logotdlm-150x150.png" },
-  { "key": "librocambio", "name": "Libro Cambio", "url": "https://librocambio.com","image":"https://librocambio.com/brand/librocambio-simbolo-fondo-oscuro.svg" },
-  { "key": "pelicoolas", "name": "Pelicoolas", "url": "https://pelicoolas.com","image":"https://pelicoolas.com/logo.png" },
-  { "key": "bravegorilla", "name": "BraveGorilla", "url": "https://bravegorilla.com", "image": "https://bravegorilla.com/images/icon-footer-vector.svg" }
+  { "key": "tallerdelamancha", "name": "Taller de la Mancha", "url": "https://tallerdelamancha.com", "color": "#C1442D", "image":"https://tallerdelamancha.com/wp-content/uploads/2026/07/cropped-logotdlm-150x150.png", "description": {
+    "en": "Online shop for linocut, screen printing and lithography kits from a Bogotá print workshop, with step-by-step guides. Built on WordPress with WooCommerce.",
+    "es": "Tienda online de kits de linograbado, serigrafía y litografía de un taller de estampado en Bogotá, con guías paso a paso. Construida con WordPress y WooCommerce."
+  } },
+  { "key": "librocambio", "name": "Libro Cambio", "url": "https://librocambio.com", "color": "#b84a32", "image":"https://librocambio.com/brand/librocambio-simbolo-fondo-oscuro.svg", "description": {
+    "en": "Neighborhood book-exchange platform in Bogotá: list the books you've read, find nearby titles and arrange swaps in person. Built with Next.js and React.",
+    "es": "Plataforma vecinal de intercambio de libros en Bogotá: publica los que ya leíste, encuentra títulos cerca de ti y acuerda el canje en persona. Construida con Next.js y React."
+  } },
+  { "key": "pelicoolas", "name": "Pelicoolas", "url": "https://pelicoolas.com", "color": "#fca000", "image":"https://pelicoolas.com/logo.png", "description": {
+    "en": "Film and TV tracker to follow actors and directors, log what you've watched, keep a watchlist and earn badges. Built with Astro and hosted on Vercel.",
+    "es": "Registro de películas y series para seguir a actores y directores, llevar el control de lo que has visto, guardar una watchlist y ganar insignias. Construida con Astro y alojada en Vercel."
+  } },
+  { "key": "bravegorilla", "name": "BraveGorilla", "url": "https://bravegorilla.com", "color": "#ffc000", "image": "https://bravegorilla.com/images/icon-footer-vector.svg", "description": {
+    "en": "Website of an independent design studio covering branding, web, motion and print, in English and Spanish. Built with Astro.",
+    "es": "Sitio de un estudio de diseño independiente que cubre branding, web, motion e impresión, en inglés y español. Construido con Astro."
+  } }
 ]

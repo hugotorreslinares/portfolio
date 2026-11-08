@@ -13,13 +13,13 @@ export default function HomePageV2() {
   return (
     <main>
       <HeroV2 />
-      <ProjectsSection />
       <Suspense fallback={<SectionLoading />}>
         <ExperienceSection />
       </Suspense>
       <section id="skills" className="scroll-mt-24">
         <SkillsSection />
       </section>
+      <ProjectsSection variant="slide" />
     </main>
   )
 }
