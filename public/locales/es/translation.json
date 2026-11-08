@@ -7,7 +7,12 @@
         "subtitle": "Ayudo a los equipos frontend a mantener las entregas en marcha cuando un proyecto se complica.",
         "description": "He desarrollado aplicaciones web con React, Vue, Angular y TypeScript. En Zemoga resolví bloqueos durante etapas críticas y ayudé a desarrolladores junior a ponerse al día.",
         "experienceLink": "Ver experiencia",
-        "contactLink": "Contactarme"
+        "contactLink": "Contactarme",
+        "imageAlt": "Hugo Torres"
+      },
+      "projects": {
+        "title": "Proyectos",
+        "visit": "Visitar"
       },
       "language": "Elegir idioma",
       "contact": {

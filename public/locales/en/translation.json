@@ -7,7 +7,12 @@
         "subtitle": "I help frontend teams keep delivery moving when a project gets difficult.",
         "description": "I’ve built web applications with React, Vue, Angular, and TypeScript. At Zemoga, I resolved blockers during critical delivery periods and helped junior developers get up to speed.",
         "experienceLink": "View experience",
-        "contactLink": "Get in touch"
+        "contactLink": "Get in touch",
+        "imageAlt": "Hugo Torres"
+      },
+      "projects": {
+        "title": "Projects",
+        "visit": "Visit"
       },
       "language": "Choose language",
       "contact": {
