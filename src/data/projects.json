@@ -1,6 +1,6 @@
 [
   { "key": "tallerdelamancha", "name": "Taller de la Mancha", "url": "https://tallerdelamancha.com", "image":"https://tallerdelamancha.com/wp-content/uploads/2026/07/cropped-logotdlm-150x150.png" },
-  { "key": "librocambio", "name": "Libro Cambio", "url": "https://librocambio.com" },
+  { "key": "librocambio", "name": "Libro Cambio", "url": "https://librocambio.com","image":"https://librocambio.com/brand/librocambio-simbolo-fondo-oscuro.svg" },
   { "key": "pelicoolas", "name": "Pelicoolas", "url": "https://pelicoolas.com","image":"https://pelicoolas.com/logo.png" },
   { "key": "bravegorilla", "name": "BraveGorilla", "url": "https://bravegorilla.com", "image": "https://bravegorilla.com/images/icon-footer-vector.svg" }
 ]
