@@ -18,7 +18,9 @@ export default function SkillsSection() {
             <section key={group.title}>
               <h3 className="mb-4 text-sm font-semibold text-slate-900">{t(group.title)}</h3>
               <ul className="flex flex-wrap gap-x-3 gap-y-2">
-                {group.skills.map((skill) => <li key={skill} className="text-sm leading-6 text-slate-600">{skill}</li>)}
+                {group.skills.map((skill) => (
+                  <li key={skill} tabIndex={0} className="rounded-sm text-sm leading-6 text-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">{skill}</li>
+                ))}
               </ul>
             </section>
           ))}

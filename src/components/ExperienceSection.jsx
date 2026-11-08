@@ -15,7 +15,8 @@ export default function ExperienceSection() {
           {experienceData.map((item) => (
             <article
               key={item.key}
-              className={`grid gap-3 py-7 first:pt-0 md:grid-cols-[minmax(10rem,0.75fr)_2fr] md:gap-10`}
+              tabIndex={0}
+              className="grid gap-3 py-7 first:pt-0 md:grid-cols-[minmax(10rem,0.75fr)_2fr] md:gap-10 hover:bg-slate-500/5 focus-visible:bg-slate-300/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 motion-reduce:transition-none"
             >
               <p className="text-sm font-medium text-slate-500">{t(item.period)}</p>
               <div>
@@ -24,7 +25,7 @@ export default function ExperienceSection() {
                 <p className="mt-3 max-w-3xl leading-7 text-slate-600">{t(item.description)}</p>
                 <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-1.5" aria-label={t('experience.technologies')}>
                   {item.tech.slice(0, 6).map((tech) => (
-                    <li key={tech} className="text-xs font-medium text-slate-500 after:ml-2 after:text-slate-300 after:content-['·'] last:after:content-none">
+                    <li key={tech} tabIndex={0} className="rounded-sm text-xs font-medium text-slate-500 after:ml-2 after:text-slate-300 after:content-['·'] last:after:content-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
                       {tech}
                     </li>
                   ))}
