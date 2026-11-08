@@ -15,9 +15,7 @@ export default function ExperienceSection() {
           {experienceData.map((item) => (
             <article
               key={item.key}
-              className={`grid gap-3 py-7 first:pt-0 md:grid-cols-[minmax(10rem,0.75fr)_2fr] md:gap-10 ${
-                item.key === 'zemoga' ? 'rounded-r-md border-l-2 border-blue-700 bg-slate-50 pl-5' : ''
-              }`}
+              className={`grid gap-3 py-7 first:pt-0 md:grid-cols-[minmax(10rem,0.75fr)_2fr] md:gap-10`}
             >
               <p className="text-sm font-medium text-slate-500">{t(item.period)}</p>
               <div>

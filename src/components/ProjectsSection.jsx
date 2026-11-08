@@ -36,16 +36,25 @@ export default function ProjectsSection() {
         </h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <div key={project.key} data-project>
+            <div key={project.key} data-project className={project.key}>
             <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block h-full rounded-xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
+              className="group relative block h-full overflow-hidden  border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
             >
-              <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-800">{project.name}</h3>
-              <p className="mt-1 text-sm text-slate-500">{project.url.replace('https://', '')}</p>
-              <span className="mt-6 inline-block text-sm font-semibold text-blue-800">
+              {project.image && (
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0  bg-right bg-no-repeat opacity-0 transition duration-300 group-hover:opacity-100 bg-[length:20%_auto]"
+                  style={{
+                    backgroundImage: `linear-gradient(rgb(255 255 255 / 0.85), rgb(255 255 255 / 0.85)), url('${project.image}')`,
+                  }}
+                />
+              )}
+              <h3 className="relative text-lg font-semibold text-slate-900 group-hover:text-blue-800">{project.name}</h3>
+              <p className="relative mt-1 text-sm text-slate-500">{project.url.replace('https://', '')}</p>
+              <span className="relative mt-6 inline-block text-sm font-semibold text-blue-800">
                 {t('site.projects.visit')} ↗
               </span>
             </a>
